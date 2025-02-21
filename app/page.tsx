@@ -1,5 +1,13 @@
-export default function Page() {
-  return (
-    <h1>Hola mundo desde Next.js App Router</h1>
-  )
+"use client";
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
+
+export default function Home() {
+  const router = useRouter();
+
+  useEffect(() => {
+    router.push("/login"); // Redirige automáticamente a /login
+  }, []);
+
+  return <p>Redirigiendo...</p>;
 }
