@@ -1,5 +1,6 @@
-// app/layout.tsx
-export const metadata = {
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
   title: "Mi App",
   description: "Una aplicación Next.js",
 };
@@ -11,9 +12,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
