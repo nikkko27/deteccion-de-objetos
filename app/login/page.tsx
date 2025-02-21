@@ -10,7 +10,7 @@ export default function LoginPage() {
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
     if (username === "niko" && password === "niko") {
-      router.push("/menu"); // Redirige al menú
+      router.push("/menu"); // Redirige al menú después del login
     } else {
       alert("Usuario o contraseña incorrectos");
     }
